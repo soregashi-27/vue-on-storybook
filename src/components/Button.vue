@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <button
-      type="button"
-      :class="['button', {primary, secondary}, size]"
-      @click="$emit('onClick')"
-      :style="style"
-      v-text="label"
-    />
-  </div>
+  <button
+    type="button"
+    :class="['button', { primary, secondary }, size]"
+    @click="$emit('onClick')"
+    :style="style"
+    v-text="label"
+  />
 </template>
 
 <script>
@@ -15,21 +13,21 @@ export default {
   props: {
     label: {
       type: String,
-      require: true
+      required: true
     },
     primary: {
-      type :Boolean,
+      type: Boolean,
       default: false
     },
     secondary: {
-      type:Boolean,
+      type: Boolean,
       default: false
     },
     size: {
-      type:String,
+      type: String,
       default: 'medium',
       validator: function(value) {
-        return ['small', 'medium', 'large'].indexOf(value) !== 1
+        return ['small', 'medium', 'large'].indexOf(value) !== -1
       }
     },
     backgroundColor: {
@@ -44,7 +42,6 @@ export default {
       }
     }
   }
-
 }
 </script>
 
