@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+※編集中
+node.js yarnを使ったpackageの依存関係管理 \
+https://bit.ly/3fuVZBn
