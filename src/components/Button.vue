@@ -27,7 +27,7 @@ export default {
       type: String,
       default: 'medium',
       validator: function (value) {
-        // return ['small', 'medium', 'large'].indexOf(value) !== -1;
+        return ['small', 'medium', 'large'].indexOf(value) !== -1;
       },
     },
     backgroundColor: {
@@ -35,6 +35,9 @@ export default {
       required: false,
     },
   },
+  methods: {
+    function: function
+  }
   computed: {
     style() {
       return {
