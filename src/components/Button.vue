@@ -5,7 +5,7 @@
     @click="$emit('onClick')"
     :style="style"
     v-text="label"
-  />trste
+  />
 </template>
 
 <script>
@@ -27,7 +27,7 @@ export default {
       type: String,
       default: 'medium',
       validator: function (value) {
-        return ['small', 'medium', 'large'].indexOf(value) !== -1;
+        // return ['small', 'medium', 'large'].indexOf(value) !== -1;
       },
     },
     backgroundColor: {
