@@ -17,8 +17,9 @@ npm run build
 
 ### Lints and fixes files
 ```
-npm run lint
+npm run fix
 ```
+元々`npm run lint`だったが設定し直した。
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
