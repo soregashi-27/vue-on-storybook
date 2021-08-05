@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header>
     <h1>Vue × Storybook 6 template</h1>
     <div class="buttons">
       <template v-if="user.id">
@@ -10,7 +10,7 @@
         <MyButton size="small" label="会員登録" @onClick="$emit('onSignUp')" />
       </template>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

@@ -4,7 +4,7 @@
     <main>
       <div class="content-wrapper">
         <div class="content" :key="i" v-for="i in 10">
-          {{ 'コンテンツが表示される.repeat(20)' }}
+          {{ 'コンテンツが表示される'.repeat(20) }}
         </div>
       </div>
     </main>
