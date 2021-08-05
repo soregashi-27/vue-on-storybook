@@ -35,9 +35,6 @@ export default {
       required: false,
     },
   },
-  methods: {
-    function: function
-  }
   computed: {
     style() {
       return {
