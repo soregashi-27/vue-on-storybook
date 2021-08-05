@@ -12,6 +12,12 @@
     "fix": "npm run format && npm run lint",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
