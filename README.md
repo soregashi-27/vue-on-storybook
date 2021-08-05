@@ -1,3 +1,8 @@
+編集中
+Linter系のVersionちゃんと書く
+
+------------
+
 # vue-on-storybook
 
 ## Project setup
