@@ -13,15 +13,15 @@ export default {
   props: {
     label: {
       type: String,
-      required: true,
+      required: true
     },
     primary: {
       type: Boolean,
-      default: false,
+      default: false
     },
     secondary: {
       type: Boolean,
-      default: false,
+      default: false
     },
     size: {
       type: String,
@@ -32,13 +32,13 @@ export default {
     },
     backgroundColor: {
       type: String,
-      required: false,
+      required: false
     },
   },
   computed: {
     style() {
       return {
-        backgroundColor: this.backgroundColor,
+        backgroundColor: this.backgroundColor
       };
     },
   },
