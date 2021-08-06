@@ -2,6 +2,8 @@ const path = require('path');
 
 module.exports = {
   stories: ['../src/components/**/*.stories.js'],
+  addons: ['@storybook/addon-essentials'],
+
   webpackFinal: config => {
     config.module.rules.push({
       test: /\.scss$/,
