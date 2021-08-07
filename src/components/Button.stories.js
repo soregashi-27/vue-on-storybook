@@ -35,3 +35,6 @@ Secondary.args = {
   secondary: true,
   label: 'セカンダリーボタン'
 };
+
+// vue-docgen-apiによってvue fileからwebpack経由でcomponentsのmeta dataをcomponent内に出力していることの確認
+// console.log(JSON.stringify(Button.__docgenInfo, null, 2));
