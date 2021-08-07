@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import MyHeader from './Header.vue';
+import MyHeader from '../Header/Header.vue'
 
 export default {
   components: {
@@ -21,20 +21,20 @@ export default {
   data() {
     return {
       user: {}
-    };
+    }
   },
   methods: {
     login() {
-      this.user = { id: 1, name: 'Arnold' };
+      this.user = { id: 1, name: 'Arnold' }
     },
     logOut() {
-      this.user = {};
+      this.user = {}
     },
     signUp() {
-      window.open('https:///github.com/');
+      window.open('https:///github.com/')
     }
   }
-};
+}
 </script>
 
 <style lang="scss">

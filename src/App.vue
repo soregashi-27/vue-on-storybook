@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <MyPage />
+    <UserPage />
   </div>
 </template>
 
 <script>
-import MyPage from './components/Page.vue';
+import UserPage from './components/UaerPage/UserPage.vue'
 
 export default {
   name: 'App',
   components: {
-    MyPage
+    UserPage
   }
-};
+}
 </script>
 
 <style>

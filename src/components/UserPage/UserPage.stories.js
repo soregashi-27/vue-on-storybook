@@ -1,14 +1,14 @@
-import Page from './Page.vue'
+import UserPage from './UserPage.vue'
 
 export default {
-  title: 'Page',
-  component: Page
+  title: 'UserPage',
+  component: UserPage
 }
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { Page },
-  template: `<Page />`
+  components: { UserPage },
+  template: `<UserPage />`
 })
 
 export const Default = Template.bind({})
