@@ -2,13 +2,31 @@ import Header from './Header'
 
 export default {
   title: 'Header',
-  component: Header
+  component: Header,
+  argTypes: {
+    onLogin: {
+      action: 'onLogin'
+    },
+    onLogout: {
+      action: 'onLogout'
+    },
+    onSignUp: {
+      action: 'onSignUp'
+    }
+  }
 }
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { Header },
-  template: `<Header v-bind="$props" />`
+  template: `
+  <Header 
+    @onLogout="onLogout"
+    @onLogin="onLogin"
+    @onSignUp="onSignUp"
+    v-bind="$props" 
+  />
+  `
 })
 
 export const LoggedIn = Template.bind({})
