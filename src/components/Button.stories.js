@@ -2,7 +2,18 @@ import Button from './Button';
 
 export default {
   title: 'Button',
-  component: Button
+  component: Button,
+  argTypes: {
+    size: {
+      control: {
+        type: 'inline-radio',
+        options: ['small', 'medium', 'large']
+      }
+    },
+    backgroundColor: {
+      control: 'color'
+    }
+  }
 };
 
 const Template = (args, { argTypes }) => ({
@@ -24,3 +35,6 @@ Secondary.args = {
   secondary: true,
   label: 'セカンダリーボタン'
 };
+
+// vue-docgen-apiによってvue fileからwebpack経由でcomponentsのmeta dataをcomponent内に出力していることの確認
+// console.log(JSON.stringify(Button.__docgenInfo, null, 2));
