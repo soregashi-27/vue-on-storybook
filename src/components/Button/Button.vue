@@ -26,23 +26,23 @@ export default {
     size: {
       type: String,
       default: 'medium',
-      validator: function (value) {
-        return ['small', 'medium', 'large'].indexOf(value) !== -1;
-      },
+      validator: function(value) {
+        return ['small', 'medium', 'large'].indexOf(value) !== -1
+      }
     },
     backgroundColor: {
       type: String,
       required: false
-    },
+    }
   },
   computed: {
     style() {
       return {
         backgroundColor: this.backgroundColor
-      };
-    },
-  },
-};
+      }
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
